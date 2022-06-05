@@ -16,6 +16,7 @@ $(document).ready(function() {
         row.append(col2)
         row.append(col3)
         $("#display-planner").append(row)
+        getStorage(hour)
     }
     $("button.btn.btn-success").click(function(e){
         var id = $(this).data("id")
@@ -36,4 +37,28 @@ $(document).ready(function() {
         return hour + " " + b
   }*/
 })
+  function getStorage(cum){
+    let inputval = localStorage.getItem(cum)
+    if(true){
+     //  $("input").data(`input${hour}`)
+     var text= $(`input#inputText${cum}`).val(inputval)
+     console.log(text)
+    }
+}
+
+
 //update the color
+function updateColor(){
+    var time = new Date().getHours();
+    for (var i = 9; i < 19; i++) {
+        console.log(time, i)
+        if (time === i) {
+            $(`#inputText${i}`).css("background","red")
+        } else if (time < i) {
+            $(`#inputText${i}`).css("background","blue")
+        }
+    }
+}
+setInterval(function(){
+    updateColor()
+},100)
