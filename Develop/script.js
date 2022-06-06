@@ -11,7 +11,7 @@ $(document).ready(function() {
         var hour = i + 9
         col1 = $(`<div class ="col-lg-2 hour">${hour}</div>`)
         col2 = $(`<div class ="col-lg-8 inputcontent"><input data-input="${hour}" id="inputText${hour}" class="form-control inputText" type="text" name="userInput"></div>`)
-        col3 = $(`<div class ="col-lg-2"><button data-id="${hour}" id="savePlanner" class="btn btn-success btn-block"><i class="fas fa-save"></i> Save</button></div>`)
+        col3 = $(`<div class ="col-lg-2"><button data-id="${hour}" id="savePlanner" class="btn btn-success btn-block"><i class="fas fa-save"></i></button></div>`)
         row.append(col1)
         row.append(col2)
         row.append(col3)

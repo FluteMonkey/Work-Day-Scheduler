@@ -1,5 +1,8 @@
-### USER STORY 
-AS AN employee with a busy schedule I WANT to add important events to a daily planner SO THAT I can manage my time effectively
+# 05 Work Day Scheduler
+
+## add events to your workday schedule at anytime
+
+- allows you to add events to specific times in the day with just the press of a button. The planner also changes colour based on if that time in the day has passed or not!
 
 ## BUSINESS CONTEXT
  Poor time management can result in missed meetings and deadlines or create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity.
