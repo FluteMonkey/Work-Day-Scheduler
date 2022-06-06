@@ -37,11 +37,11 @@ $(document).ready(function() {
         return hour + " " + b
   }*/
 })
-  function getStorage(cum){
-    let inputval = localStorage.getItem(cum)
+  function getStorage(store){
+    let inputval = localStorage.getItem(store)
     if(true){
      //  $("input").data(`input${hour}`)
-     var text= $(`input#inputText${cum}`).val(inputval)
+     var text= $(`input#inputText${store}`).val(inputval)
      console.log(text)
     }
 }
@@ -51,8 +51,7 @@ $(document).ready(function() {
 function updateColor(){
     var time = new Date().getHours();
     for (var i = 9; i < 19; i++) {
-        console.log(time, i)
-        if (time === i) {
+        if (time == i) {
             $(`#inputText${i}`).css("background","red")
         } else if (time < i) {
             $(`#inputText${i}`).css("background","blue")
