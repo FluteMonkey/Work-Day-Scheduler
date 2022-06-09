@@ -60,4 +60,4 @@ function updateColor(){
 }
 setInterval(function(){
     updateColor()
-},100)
+}, 100)
